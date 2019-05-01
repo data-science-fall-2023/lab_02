@@ -1,0 +1,63 @@
+---
+title: "Dates Lab"
+date: "`r Sys.Date()`"
+author: "David Gerard"
+output: pdf_document
+urlcolor: "blue"
+params: 
+  solutions: FALSE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = params$solutions, 
+                      eval = params$solutions,
+                      fig.height = 3, 
+                      fig.width  = 6,
+                      fig.align  = "center")
+ggplot2::theme_set(ggplot2::theme_bw())
+```
+
+# Instructions
+
+- Add your solutions to this file.
+- Commit after you complete each question.
+- When you are done, push to GitHub.
+- Learning Objectives
+  - Practice `lubridate`.
+  - More practice with `dplyr` and `tidyr`.
+
+# Capital Bikeshare
+
+For this exercise, we will use the data from `capital_trips_2016.csv` found
+at <https://dcgerard.github.io/stat_412_612/data/capital_trips_2016.csv>.
+
+1. Read these data into R.
+    
+2. Rename variables to conform to our guidelines on variable names.
+
+3. Parse the start date and end date variables to be date-times if they 
+   aren't already.
+    
+4. Use the start date and end date variables to calculate the duration of each trip.
+   See if this duration is in agreement with the duration (ms) variable
+   provided in the data set. Can you explain any discrepancies?
+    
+5. If you found any discrepancies in part 3, fix them now.
+
+6. How much time elapsed between the start of the first trip and the end of the
+   the last trip.
+   
+7. Is a trip's duration associated with the hour of day? Make a plot to explore.
+    
+8. What is the distribution of durations? Make a plot.
+    
+9. What is the longest trip taken (in hours)? 
+   Between which stations was this trip taken?
+
+
+
+
+   
+
+ 
+
